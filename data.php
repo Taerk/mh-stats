@@ -26,20 +26,8 @@ $data = [
       "bow" => 21,
       "prowler" => NULL,
     ],
-    "images" => [
-      [
-        "src" => "img/screenshots/mh3u_playtime.png",
-        "title" => "MH3U Playtime"
-      ],
-      [
-        "src" => "img/screenshots/mh3u_guildcard.png",
-        "title" => "MH3U Guild Card"
-      ],
-      [
-        "src" => "img/screenshots/mh3u_weapon_usage.png",
-        "title" => "MH3U Weapon Usage"
-      ]
-    ]
+    "images" => [],
+    "armor" => [],
   ],
   [
     "name" => "MH4U",

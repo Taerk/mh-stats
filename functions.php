@@ -64,6 +64,24 @@ function display_games($data) {
         <?php } ?>
         </div>
       </section>
+
+      <section id="<?= $game["id"] ?>_armor" class="subsection armor-section">
+        <h3>Armor Sets</h3>
+        <div class="section-container">
+        <?php
+        foreach ($game["armor"] as $name=>$armor) {
+          if ($name) {
+            echo "<details>";
+            echo "<summary>$name</summary>";
+            echo "<p>$armor</p>";
+            echo "</details>";
+          } else {
+            echo "<p>$armor</p>";
+          }
+        }
+        ?>
+        </div>
+      </section>
     </section>
     <?php
     $prev_game_id = $game["id"];
