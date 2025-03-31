@@ -1,0 +1,114 @@
+:root {
+  color-scheme: light dark;
+}
+html,body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  background-color: light-dark(#fff, #222);
+  color: light-dark(#000, #eee);
+}
+h1 { margin: 10px }
+
+.sub-toc { padding-left: 20px }
+.sub-toc li { display: inline-block; margin-left: 5px }
+.sub-toc li:before { content: "- " }
+.data-name {
+  font-weight: bold;
+}
+details {
+  padding-left: 9px;
+  margin-left: 1px;
+  border-left: 2px solid light-dark(#000, #fff);
+  margin-bottom: 3px;
+}
+summary { cursor: pointer }
+
+section {
+  margin-top: 10px;
+}
+section .anchor {
+  text-decoration: none;
+  opacity: 0.5;
+}
+section .anchor:hover {
+  opacity: 1;
+}
+section.game-section {
+  padding: 5px 15px;
+}
+section.game-section:nth-child(odd) {
+  background-color: light-dark(#f0f0f0, #2a2a2a);
+}
+section table.game-data {
+  border-collapse: collapse;
+  text-align: center;
+}
+section table.game-data th, section table.game-data td {
+  padding: 5px;
+  border: 1px solid light-dark(#000, #fff);
+}
+section table.game-data th {
+  font-size: 1.2em;
+}
+.weapon-section .section-container { 
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.weapon-usage {
+  display: inline-block;
+  margin: 5px;
+  font-family: 'Consolas', monospace;
+  line-height: 1.2em;
+  border-collapse: collapse;
+}
+.weapon-usage th, .weapon-usage td {
+  padding: 0px 10px;
+  margin: 0;
+}
+.weapon-usage .tooltip-border {
+  border-bottom: 1px dashed;
+  cursor: help;
+}
+.weapon-usage img {
+  width: auto;
+  height: 1.2em;
+  vertical-align: middle;
+}
+.weapon-usage .align-right {
+  text-align: right;
+}
+.weapon-usage .change-icon { width: 1em }
+.weapon-usage .usage-change-up .change-icon { color: green }
+.weapon-usage .usage-change-down .change-icon { color: red }
+.weapon-usage .change-small { opacity: 0.3 }
+
+.weapon-usage .game-span-def { border-bottom: 1px solid light-dark(#666,#666) }
+.weapon-usage .dash-left { border-left: 1px dashed light-dark(#666,#666) }
+.weapon-usage tbody tr:hover { background-color: light-dark(#999, #999); }
+.weapon-usage tbody tr.highlighted { background-color: light-dark(#999, #555); }
+/* .weapon-usage tbody tr.highlighted.wep-type-great_sword { background-color: light-dark(#999, #440000); }
+.weapon-usage tbody tr.highlighted.wep-type-long_sword { background-color: light-dark(#999, #044); }
+.weapon-usage tbody tr.highlighted.wep-type-sword_shield { background-color: light-dark(#999, #400); }
+.weapon-usage tbody tr.highlighted.wep-type-dual_blades { background-color: light-dark(#999, #660); }
+.weapon-usage tbody tr.highlighted.wep-type-hammer { background-color: light-dark(#999, #3b082f); }
+.weapon-usage tbody tr.highlighted.wep-type-hunting_horn { background-color: light-dark(#999, #a8570b); }
+.weapon-usage tbody tr.highlighted.wep-type-lance { background-color: light-dark(#999, #200aa0); }
+.weapon-usage tbody tr.highlighted.wep-type-gunlance { background-color: light-dark(#999, #680547); }
+.weapon-usage tbody tr.highlighted.wep-type-switch_axe { background-color: light-dark(#999, #777777); }
+.weapon-usage tbody tr.highlighted.wep-type-charge_blade { background-color: light-dark(#999, #044); }
+.weapon-usage tbody tr.highlighted.wep-type-insect_glaive { background-color: light-dark(#999, #400); }
+.weapon-usage tbody tr.highlighted.wep-type-light_bowgun { background-color: light-dark(#999, #135326); }
+.weapon-usage tbody tr.highlighted.wep-type-heavy_bowgun { background-color: light-dark(#999, #4e0d2e); }
+.weapon-usage tbody tr.highlighted.wep-type-bow { background-color: light-dark(#999, #073333); }
+.weapon-usage tbody tr.highlighted.wep-type-prowler { background-color: light-dark(#999, #400); } */
+
+[id$="_images"] img {
+  width: auto;
+  max-width: 20%;
+}
