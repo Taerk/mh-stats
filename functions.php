@@ -4,7 +4,7 @@ function display_games($data) {
   $prev_weapon_totals = NULL;
   $prev_game_id = NULL;
 
-  foreach ($data as $key=>$game) { ?>
+  foreach ($data as $key=>$game) { $GLOBALS["game_id"] = $game["id"]; ?>
     <section id="<?= $game["id"] ?>" class="game-section">
       <h2><?= $game["name"] ?> <a class="anchor" href="#<?= $game["id"] ?>">🔗</a></h2>
       <table class="game-data">
@@ -239,7 +239,7 @@ function find_data($data, $id) {
   return current($filter_array) ?? [ "err" => NULL ];
 }
 
-function set_info($info) {
+function set_info($info) {  
   $output = "";
 
   if (empty($info))
@@ -255,7 +255,7 @@ function set_info($info) {
       break;
 
     case "details":
-      $output .= "<details" . ($info["open"] ? " open" : "") . " id=\"armor_" . preg_replace('/ /g', " ", strtolower($info["name"])) . "\">";
+      $output .= "<details" . ($info["open"] ? " open" : "") . " id=\"{$GLOBALS['game_id']}_armor_" . str_replace(' ', "_", strtolower($info["name"])) . "\">";
       if (is_string($info['name'])) {
         $output .= "<summary>{$info['name']}</summary>";
       }
