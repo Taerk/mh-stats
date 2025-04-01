@@ -255,7 +255,7 @@ function set_info($info) {
       break;
 
     case "details":
-      $output .= "<details" . ($info["open"] ? " open" : "") . ">";
+      $output .= "<details" . ($info["open"] ? " open" : "") . " id=\"armor_" . preg_replace('/ /g', " ", strtolower($info["name"])) . "\">";
       if (is_string($info['name'])) {
         $output .= "<summary>{$info['name']}</summary>";
       }
@@ -447,5 +447,6 @@ function build_weapon($info, $standalone = false) {
 }
 
 function get_hone($hone) {
-  return "<div class=\"hone-bar hone-bar-$hone\">" . ucfirst($hone) . "</div>";
+  if (!empty($hone))
+    return "<div class=\"hone-bar hone-bar-$hone\">" . ucfirst($hone) . "</div>";
 }
