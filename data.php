@@ -27,7 +27,481 @@ $data = [
       "prowler" => NULL,
     ],
     "images" => [],
-    "armor" => [],
+    "sets" => [
+      "Armors sets in this game were heavily dependent on what charms (talismans) you could get. This game was infamous for its \"charm tables\" that would determine which charms you could get being determined on character creation. There were some pretty bad tables.",
+      [
+        "type" => "details",
+        "name" => "Helios Mix",
+        "open" => false,
+        "items" => [
+          "A mix of the Helios armor with other endgame pieces that can be moved around. At all times, it offered earplugs and sharpness +1 with a buff in some damage type.",
+          [
+            "type" => "image",
+            "src" => "mh3u/mh3u_armor_anubis_appearance.png"
+          ],
+          [
+            "type" => "set",
+            "name" => "General Use Variant",
+            "weapon" => [
+              "type" => "sword_shield",
+              "name" => "Struxion Demolisher",
+              "attack" => 371,
+              "element_type" => "slime",
+              "element_dmg" => 420,
+              "affinity" => 0,
+              "slots" => [0],
+              "sharpness" => [11,15,17,22,17,11,4],
+              "sharpness_inc" => 1
+            ],
+            "defense" => 658,
+            "res" => [
+              "fire" => -2,
+              "water" => 14,
+              "ice" => -1,
+              "thunder" => -8,
+              "dragon" => -23
+            ],
+            "skills" => [
+              "Speed Sharpening" => 0,
+              "Sharpness +1" => 0,
+              "Capture Guru" => 0,
+              "Bombardier" => 0,
+              "Earplugs" => 0
+            ],
+            "pieces" => [
+              "Helios Helm Z",
+              "Damascus Mail X",
+              "Helios Vambraces Z",
+              "Lambent Sash",
+              "Helios Greaves X"
+            ],
+            "charm" => [
+              "skills" => [
+                "Pierce Up" => 1,
+                "Bomb Boost" => 4,
+              ],
+              "slots" => [10,10]
+            ]
+          ],
+          [
+            "type" => "set",
+            "name" => "Capture Variant",
+            "weapon" => [
+              "type" => "sword_shield",
+              "name" => "Hellnox Epee",
+              "attack" => 343,
+              "element_type" => "poison",
+              "element_dmg" => 490,
+              "affinity" => 0,
+              "slots" => [0,0],
+              "sharpness" => [11,15,17,22,17,11,4],
+              "sharpness_inc" => 1
+            ],
+            "defense" => 658,
+            "res" => [
+              "fire" => -2,
+              "water" => 14,
+              "ice" => -1,
+              "thunder" => -8,
+              "dragon" => -23
+            ],
+            "skills" => [
+              "Status Atk +2" => 0,
+              "Sharpness +1" => 0,
+              "Capture Guru" => 0,
+              "Earplugs" => 0
+            ],
+            "pieces" => [
+              "Helios Helm Z",
+              "Damascus Mail X",
+              "Helios Vambraces Z",
+              "Lambent Sash",
+              "Helios Greaves X"
+            ],
+            "charm" => [
+              "skills" => [
+                "Status" => 4,
+                "Eating" => -1,
+              ],
+              "slots" => [10,10,10]
+            ]
+          ],
+          [
+            "type" => "set",
+            "name" => "Speed Sharpen Variant",
+            "weapon" => [
+              "type" => "sword_shield",
+              "name" => "Hellnox Epee",
+              "attack" => 343,
+              "element_type" => "poison",
+              "element_dmg" => 490,
+              "affinity" => 0,
+              "slots" => [0,0],
+              "sharpness" => [11,15,17,22,17,11,4],
+              "sharpness_inc" => 1
+            ],
+            "defense" => 658,
+            "res" => [
+              "fire" => -2,
+              "water" => 14,
+              "ice" => -1,
+              "thunder" => -8,
+              "dragon" => -23
+            ],
+            "skills" => [
+              "Status Atk +2" => 0,
+              "Speed Sharpening" => 0,
+              "Sharpness +1" => 0,
+              "Earplugs" => 0
+            ],
+            "pieces" => [
+              "Helios Helm Z",
+              "Damascus Mail X",
+              "Helios Vambraces Z",
+              "Lambent Sash",
+              "Helios Greaves X"
+            ],
+            "charm" => [
+              "skills" => [
+                "Status" => 4,
+                "Eating" => -1,
+              ],
+              "slots" => [10,10,10]
+            ]
+          ],
+          [
+            "type" => "set",
+            "name" => "Fire Attack Variant",
+            "weapon" => [
+              "type" => "sword_shield",
+              "name" => "The Mornifestation",
+              "attack" => 329,
+              "element_type" => "fire",
+              "element_dmg" => 550,
+              "affinity" => 0,
+              "slots" => [],
+              "sharpness" => [22,11,11,11,22,7,15],
+              "sharpness_inc" => 1
+            ],
+            "defense" => 658,
+            "res" => [
+              "fire" => -2,
+              "water" => 14,
+              "ice" => -1,
+              "thunder" => 12,
+              "dragon" => -23
+            ],
+            "skills" => [
+              "Thunder Res +20" => 0,
+              "Sharpness +1" => 0,
+              "Fire Atk +1" => 0,
+              "Earplugs" => 0,
+              "Attack Up (S)" => 0,
+            ],
+            "pieces" => [
+              "Helios Helm Z",
+              "Damascus Mail X",
+              "Helios Vambraces Z",
+              "Lambent Sash",
+              "Helios Greaves X"
+            ],
+            "charm" => [
+              "skills" => [
+                "Fire Atk" => 7,
+                "ThunderRes" => 12,
+              ],
+              "slots" => []
+            ]
+          ],
+          [
+            "type" => "set",
+            "name" => "High Crit Variant",
+            "weapon" => [
+              "type" => "sword_shield",
+              "name" => "Sanctioned Sword",
+              "attack" => 301,
+              "element_type" => "thunder",
+              "element_dmg" => 500,
+              "affinity" => 45,
+              "slots" => [],
+              "sharpness" => [2,4,7,54,15,15,0],
+              "sharpness_inc" => 1
+            ],
+            "defense" => 658,
+            "res" => [
+              "fire" => -2,
+              "water" => 14,
+              "ice" => -1,
+              "thunder" => -8,
+              "dragon" => -23
+            ],
+            "skills" => [
+              "Critical Eye +3" => 0,
+              "Speed Sharpening" => 0,
+              "Sharpness +1" => 0,
+              "Earplugs" => 0,
+            ],
+            "pieces" => [
+              "Helios Helm Z",
+              "Damascus Mail X",
+              "Helios Vambraces Z",
+              "Lambent Sash",
+              "Helios Greaves X"
+            ],
+            "charm" => [
+              "skills" => [
+                "Stam Drain" => 4,
+                "Expert" => 10,
+              ],
+              "slots" => []
+            ]
+          ],
+          "A variant using the easy to get Helios ZZZXZ armor that gave HG Earplugs and Sharpness +1 with some slots for extra skills.",
+          [
+            "type" => "set",
+            "name" => "Hunting Horn Variant",
+            "defense" => 659,
+            "res" => [
+              "fire" => 0,
+              "water" => 20,
+              "ice" => 5,
+              "thunder" => -10,
+              "dragon" => -35
+            ],
+            "skills" => [
+              "HG Earplugs" => 0,
+              "Horn Maestro" => 0,
+              "Sharpness +1" => 0,
+              "Knockout King" => 0
+            ],
+            "pieces" => [
+              "Helios Helm Z",
+              "Helios Mail Z",
+              "Helios Vambraces Z",
+              "Helios Greaves X",
+              "Helios Greaves Z"
+            ],
+            "charm" => [
+              "skills" => [
+                "KO" => 4,
+                "Power C+" => 1,
+              ],
+              "slots" => [10,10]
+            ]
+          ],
+        ]
+      ],
+      [
+        "type" => "details",
+        "name" => "Glacial Agnaktor",
+        "open" => false,
+        "items" => [
+          "A defensive armor with no attacks bouncing thanks to mind's eye.",
+          [
+            "type" => "image",
+            "src" => "mh3u/mh3u_armor_glacialagna_appearance.png"
+          ],
+          [
+            "type" => "set",
+            "name" => "Offensive Variant",
+            "defense" => 659,
+            "res" => [
+              "fire" => -30,
+              "water" => 15,
+              "ice" =>20,
+              "thunder" => -10,
+              "dragon" => -10
+            ],
+            "skills" => [
+              "Critical Eye +3" => 0,
+              "Guard +2" => 0,
+              "Mind's Eye" => 0,
+              "Guard Boost" => 0,
+              "Constitution -1" => -1,
+            ],
+            "pieces" => [
+              "Agnaktor Helm Z",
+              "Agnaktor Mail Z",
+              "Agnaktor Vambraces Z",
+              "Agnaktor Greaves X",
+              "Agnaktor Greaves Z"
+            ],
+            "charm" => [
+              "skills" => [
+                "Stam Drain" => 4,
+                "Expert" => 10,
+              ],
+              "slots" => []
+            ]
+          ],
+          [
+            "type" => "set",
+            "name" => "Capture Variant",
+            "defense" => 659,
+            "res" => [
+              "fire" => -30,
+              "water" => 15,
+              "ice" =>20,
+              "thunder" => -10,
+              "dragon" => -10
+            ],
+            "skills" => [
+              "Guard +2" => 0,
+              "Trap Master" => 0,
+              "Capture Guru" => 0,
+              "Mind's Eye" => 0,
+              "Guard Boost" => 0,
+            ],
+            "pieces" => [
+              "Agnaktor Helm Z",
+              "Agnaktor Mail Z",
+              "Agnaktor Vambraces Z",
+              "Agnaktor Greaves X",
+              "Agnaktor Greaves Z"
+            ],
+            "charm" => [
+              "skills" => [
+                "ThunderAtk" => 3,
+                "SpeedSetup" => 10,
+              ],
+              "slots" => []
+            ]
+          ],
+        ]
+      ],
+      [
+        "type" => "details",
+        "name" => "Artian Mixes",
+        "open" => false,
+        "items" => [
+          "Sets used for rapid firing Normal Lv 2",
+          [
+            "type" => "image",
+            "src" => "mh3u/mh3u_armor_artianmix_appearance.png"
+          ],
+          [
+            "type" => "set",
+            "name" => "Rapid Normal",
+            "weapon" => [
+              "type" => "light_bowgun",
+              "name" => "God's Archipelago",
+              "attack" => 331,
+              "element_type" => NULL,
+              "element_dmg" => NULL,
+              "affinity" => 0,
+              "slots" => [0],
+              "rapid" => [
+                [
+                  "type" => "Normal S Lv2",
+                  "shots" => 4,
+                  "wait" => "Short"
+                ],
+                [
+                  "type" => "Crag S Lv1",
+                  "shots" => 4,
+                  "wait" => "Medium"
+                ],
+                [
+                  "type" => "Clust S Lv1",
+                  "shots" => 3,
+                  "wait" => "V.Long"
+                ]
+              ]
+            ],
+            "defense" => 387,
+            "res" => [
+              "fire" => -1,
+              "water" => 8,
+              "ice" => 3,
+              "thunder" => -6,
+              "dragon" => 7
+            ],
+            "skills" => [
+              "Reload Speed +2" => 0,
+              "Normal/Rapid Up" => 0,
+              "Bonus Shot" => 0,
+              "Quick Sheathe" => 0,
+            ],
+            "pieces" => [
+              "Nibelsnarf Helm Z",
+              "Artian Vest X",
+              "Agnaktor Vambraces Z",
+              "Nibelsnarf Greaves X",
+              "Agnaktor Greaves Z"
+            ],
+            "charm" => [
+              "skills" => [
+                "Sheathing" => 3,
+                "Normal Up" => 3,
+              ],
+              "slots" => []
+            ]
+          ],
+          [
+            "type" => "image",
+            "src" => "mh3u/mh3u_armor_artian_appearance.png"
+          ],
+          [
+            "type" => "set",
+            "name" => "Low Recoil Explosions",
+            "weapon" => [
+              "type" => "light_bowgun",
+              "name" => "God's Archipelago",
+              "attack" => 331,
+              "element_type" => NULL,
+              "element_dmg" => NULL,
+              "affinity" => 0,
+              "slots" => [0],
+              "rapid" => [
+                [
+                  "type" => "Normal S Lv2",
+                  "shots" => 4,
+                  "wait" => "Short"
+                ],
+                [
+                  "type" => "Crag S Lv1",
+                  "shots" => 4,
+                  "wait" => "Medium"
+                ],
+                [
+                  "type" => "Clust S Lv1",
+                  "shots" => 3,
+                  "wait" => "V.Long"
+                ]
+              ]
+            ],
+            "defense" => 387,
+            "res" => [
+              "fire" => 1,
+              "water" => -5,
+              "ice" => 11,
+              "thunder" => -9,
+              "dragon" => 13
+            ],
+            "skills" => [
+              "Recoil Down +3" => 0,
+              "Bonus Shot" => 0,
+              "Trap Master" => 0,
+              "Bombardier" => 0
+            ],
+            "pieces" => [
+              "Chakra Earring",
+              "Artian Vest Z",
+              "Artian Guards X",
+              "Vangis Coat",
+              "Artian Leggings X"
+            ],
+            "charm" => [
+              "skills" => [
+                "ThunderAtk" => 3,
+                "SpeedSetup" => 10,
+              ],
+              "slots" => []
+            ]
+          ],
+        ]
+      ],
+    ],
   ],
   [
     "name" => "MH4U",
@@ -68,6 +542,177 @@ $data = [
         "src" => "img/screenshots/mh4u_weapon_usage.png",
         "title" => "MH4U Weapon Usage"
       ]
+    ],
+    "sets" => [
+      [
+        "type" => "details",
+        "name" => "Masked Wrestler",
+        "items" => [
+          [
+            "type" => "image",
+            "src" => "mh4u/mh4u_wrestler_appearance.png",
+          ],
+          "A set with many strong skills. Paired with a paralysis and three other hunters, it enabled big damage.",
+          [
+            "type" => "set",
+            "name" => "Get 'em Boys",
+            "weapon" => [
+              "type" => "sword_shield",
+              "name" => "Coctura Balgang",
+              "attack" => 364,
+              "element_type" => "paralysis",
+              "element_dmg" => 320,
+              "affinity" => 10,
+              "slots" => [0,0],
+              "sharpness" => [14,8,24,18,12,12,2],
+              "sharpness_inc" => 1
+            ],
+            "defense" => 682,
+            "res" => [
+              "fire" => 7,
+              "water" => -11,
+              "ice" => -1,
+              "thunder" => -11,
+              "dragon" => -4
+            ],
+            "skills" => [
+              "Attack Up (L)" => 0,
+              "HG Earplugs" => 0,
+              "Sharpness +1" => 0,
+              "Critical Eye +1" => 0,
+              "Razor Sharp" => 0,
+              "Speed Eating +1" => 0,
+            ],
+            "pieces" => [
+              "Esurient Helm Z",
+              "Garuga Mail X",
+              "Esurient Vambraces Z",
+              "Excello Coil Z",
+              "Rath Soul Greaves Z"
+            ],
+            "charm" => [
+              "skills" => [
+                "Hearing" => 3,
+                "Handicraft" => 7,
+              ],
+              "slots" => []
+            ]
+          ],
+          [
+            "type" => "details",
+            "name" => "Alternative Weapons",
+            "items" => [
+              [
+                "type" => "weapon",
+                "weapon" => [
+                  "type" => "sword_shield",
+                  "name" => "Le Limier",
+                  "attack" => 364,
+                  "element_type" => "dragon",
+                  "element_dmg" => 350,
+                  "affinity" => 50,
+                  "slots" => [0],
+                  "sharpness" => [20,14,16,10,6,16,8],
+                  "sharpness_inc" => 1
+                ]
+              ],
+              [
+                "type" => "weapon",
+                "weapon" => [
+                  "type" => "sword_shield",
+                  "name" => "Panja Sedition",
+                  "attack" => 434,
+                  "element_type" => NULL,
+                  "element_dmg" => NULL,
+                  "affinity" => 20,
+                  "slots" => [0],
+                  "sharpness" => [40,24,8,6,6,4,2],
+                  "sharpness_inc" => 1,
+                  "special" => "Sharpens on roll"
+                ]
+              ],
+            ]
+          ]
+        ]
+      ],
+      [
+        "type" => "details",
+        "name" => "Artian",
+        "open" => false,
+        "items" => [
+          [
+            "type" => "image",
+            "src" => "mh4u/mh4u_artian_appearance.png",
+          ],
+          "Emphasis on rapid firing.",
+          [
+            "type" => "set",
+            "name" => "Artian",
+            "weapon" => [
+              "type" => "light_bowgun",
+              "name" => "Merciless Rage",
+              "attack" => 312,
+              "affinity" => 15,
+              "slots" => [0,0],
+              "reload" => "Average",
+              "recoil" => "Low",
+              "deviation" => "None",
+              "rapid" => [
+                [
+                  "type" => "Pierce S Lv1",
+                  "shots" => 4,
+                  "wait" => "Average"
+                ],
+                [
+                  "type" => "Pierce S Lv2",
+                  "shots" => 4,
+                  "wait" => "Average"
+                ],
+                [
+                  "type" => "Poison S Lv1",
+                  "shots" => 4,
+                  "wait" => "High"
+                ],
+                [
+                  "type" => "Sleep S Lv1",
+                  "shots" => 3,
+                  "wait" => "High"
+                ]
+              ],
+              "honing" => "life"
+            ],
+            "defense" => 391,
+            "res" => [
+              "fire" => 5,
+              "water" => -10,
+              "ice" => -10,
+              "thunder" => 15,
+              "dragon" => 20
+            ],
+            "skills" => [
+              "Evasion +1" => 0,
+              "Recoil Down +1" => 0,
+              "Bonus Shot" => 0,
+              "Evade Extender" => 0,
+              "Steadiness +1" => 0
+            ],
+            "pieces" => [
+              "Artian Cap X",
+              "Artian Vest X",
+              "Artian Guards X",
+              "Artian Coat X",
+              "Artian Leggings X"
+            ],
+            "charm" => [
+              "skills" => [
+                "Evasion" => 5,
+                "Hearing" => -3,
+              ],
+              "slots" => [0,0]
+            ]
+          ],
+        ]
+      ],
     ]
   ],
   [

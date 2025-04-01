@@ -11,6 +11,14 @@ body {
   color: light-dark(#000, #eee);
 }
 h1 { margin: 10px }
+.mh-icon {
+  width: auto;
+  height: 1.2em;
+  vertical-align: middle;
+}
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
 
 .sub-toc { padding-left: 20px }
 .sub-toc li { display: inline-block; margin-left: 5px }
@@ -25,6 +33,7 @@ details {
   margin-bottom: 3px;
 }
 summary { cursor: pointer }
+
 
 section {
   margin-top: 10px;
@@ -75,14 +84,6 @@ section table.game-data th {
   border-bottom: 1px dashed;
   cursor: help;
 }
-.weapon-usage img {
-  width: auto;
-  height: 1.2em;
-  vertical-align: middle;
-}
-.weapon-usage .align-right {
-  text-align: right;
-}
 .weapon-usage .change-icon { width: 1em }
 .weapon-usage .usage-change-up .change-icon { color: green }
 .weapon-usage .usage-change-down .change-icon { color: red }
@@ -112,3 +113,87 @@ section table.game-data th {
   width: auto;
   max-width: 20%;
 }
+
+
+.set-display { 
+  padding: 5px;
+}
+.set-display .set-name {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid light-dark(rgba(0,0,0,0.3), rgba(255,255,255,0.3));
+  font-size: 1.1em;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+}
+.set-display .res-neg { color: red }
+.set-display .mh-icon { height: 1em }
+.set-display .armor-block {
+  display: flex;
+  flex-direction: row;
+}
+.set-display .armor-block .left-border {
+  padding-left: 5px;
+  margin-left: 5px;
+  border-left: 1px solid light-dark(rgba(0,0,0,0.3), rgba(255,255,255,0.3));
+}
+.set-display .negative-skill { color: red }
+.set-display, .weapon-display.standalone {
+  background-color: light-dark(#cec19e, #333);
+  color: light-dark(#303030, #f0f0f0);
+  border: 1px solid light-dark(#333, #cec19e);
+  display: inline-block;
+  padding: 3px;
+  margin: 1px;
+  font-size: 0.9em;
+}
+.weapon-display .hone-bar {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 1px 3px;
+  margin-left: 4px;
+  background-color: #ddd;
+  color: #fff;
+}
+.weapon-display .hone-bar.hone-bar-life { background-color: #393 }
+.weapon-display .sharpness-display {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.weapon-display .sharpness-bar {
+  width: 99px;
+  background-color: light-dark(rgba(0,0,0,0.2), rgba(255,255,255,0.2));
+  display: inline-flex;
+  flex-direction: row;
+  border: 1px solid light-dark(#000,#fff);
+}
+.weapon-display .sharpness-bar.sharpness-plus { border: 1px solid cyan }
+.weapon-display .sharpness-bar, .weapon-display .sharpness-bar .sharp-bar {
+  height: 10px;
+}
+.weapon-display .sharpness-bar .sharp-bar { flex-grow: 1 }
+.weapon-display .sharpness-bar .sharp-bar-red { background-color: red }
+.weapon-display .sharpness-bar .sharp-bar-orange { background-color: orange }
+.weapon-display .sharpness-bar .sharp-bar-yellow { background-color: yellow }
+.weapon-display .sharpness-bar .sharp-bar-green { background-color: green }
+.weapon-display .sharpness-bar .sharp-bar-blue { background-color: blue }
+.weapon-display .sharpness-bar .sharp-bar-white { background-color: white }
+.weapon-display .sharpness-bar .sharp-bar-purple { background-color: purple }
+.weapon-display .sharpness-inc-indicator {
+  font-size: 0.8em;
+  margin-left: 3px;
+}
+.weapon-display .slot-levels {
+  display: inline-flex;
+  width: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+.weapon-display .rapid-info {
+  border-top: 1px solid light-dark(rgba(0,0,0,0.3), rgba(255,255,255,0.3));
+  padding-top: 3px;
+  margin-top: 3px;
+  font-size: 0.9em;
+}
+.weapon-display .mh-icon { height: 1em }
